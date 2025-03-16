@@ -591,19 +591,19 @@ article { display: none; }
 }
 
 .clients-item {
-    min-width: 50%;
-    scroll-snap-align: start;
+    transition: 0.4s;
 }
-
+.clients-item:hover{
+    width: 100px;
+}
     .clients-item img {
         width: 100%;
-        filter: grayscale(1);
+        filter: grayscale(10);
         transition: var(--transition1);
     }
 
         .clients-item img:hover { filter: grayscale(0);}
 
-/*RESUME*/
 
 .article-title { margin-bottom: 30px; }
 
@@ -1402,7 +1402,13 @@ textarea.form-input {
 
    .img-avatar {
     border-radius: 50px;
-  height: 160px;
+  height: 130px;
+  transition: 0.4s;
+   } 
+   .img-avatar:hover{
+    height: 160px;
+    width: 150px;
+    border-radius: 20px;
    }
 
     .info-content .name {
